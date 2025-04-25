@@ -1,0 +1,29 @@
+.add-task {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin: 3rem 0;
+
+   &__input {
+      flex-grow: 1;
+      padding: 1rem 1.5rem;
+      outline: none;
+      border: 2px solid oklch(87.2% 0.01 258.338);
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      &:focus {
+         border-color: #3498db;
+      }
+   }
+
+   &__btn {
+      display: inline-block;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      background-color: oklch(54.6% 0.245 262.881);
+      border-radius: 0.25rem;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+   }
+}

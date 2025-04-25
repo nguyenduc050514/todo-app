@@ -1,0 +1,39 @@
+.task-list {
+   & > li {
+      margin-bottom: 0.5rem;
+   }
+   & > li:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.task-item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem;
+   border-radius: 5px;
+   background-color: oklch(92.8% 0.006 264.531);
+
+   &__title {
+      flex-grow: 1;
+      color: oklch(0.33 0.02 257.23);
+   }
+}
+
+.task-actions {
+   display: flex;
+   gap: 1rem;
+   &__btn {
+      background-color: #d85353;
+      border: none;
+      outline: none;
+      padding: 12px 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+      &--edit {
+         background-color: #3498db;
+      }
+   }
+}
