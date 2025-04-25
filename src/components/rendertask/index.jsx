@@ -1,6 +1,9 @@
-import EmptyTask from "../emptytask";
+import EmptyTask from "../NoDataImage";
 import styles from "./renderTask.module.scss";
-const RenderTask = ({ tasks }) => {
+import checkList from "../../assets/images/businessman-checklist.jpg";
+import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
+import React from "react";
+const RenderTask = React.memo(({ tasks, handleDeleteTask, handleEditTask }) => {
    return (
       <>
          {tasks.length > 0 ? (
@@ -12,21 +15,25 @@ const RenderTask = ({ tasks }) => {
                      </span>
                      <div className={styles["task-actions"]}>
                         <button
-                           className={`${styles["task-actions__btn"]} ${styles["task-actions__btn--edit"]}`}
+                           className={styles["task-actions__btn"]}
+                           onClick={() => handleEditTask(task.id)}
                         >
-                           Sửa
+                           <EditOutlined />
                         </button>
-                        <button className={styles["task-actions__btn"]}>
-                           Xóa
+                        <button
+                           className={styles["task-actions__btn"]}
+                           onClick={() => handleDeleteTask(task.id)}
+                        >
+                           <DeleteOutlined />
                         </button>
                      </div>
                   </li>
                ))}
             </ul>
          ) : (
-            <EmptyTask />
+            <EmptyTask checkList={checkList} />
          )}
       </>
    );
-};
+});
 export default RenderTask;

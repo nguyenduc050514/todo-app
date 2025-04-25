@@ -1,6 +1,5 @@
 import styles from "./emptyTask.module.scss";
-import checkList from "../../assets/images/businessman-checklist.jpg";
-const EmptyTask = () => {
+const EmptyTask = ({ checkList }) => {
    return (
       <div className={styles["media"]}>
          <img src={checkList} alt="" />
