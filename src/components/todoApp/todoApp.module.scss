@@ -14,3 +14,9 @@ body {
    }
 }
 
+.empty-no-task {
+   color: red;
+   font-size: 1rem;
+   background: oklch(80.8% 0.114 19.571);
+   padding: 12px;
+}

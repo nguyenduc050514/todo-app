@@ -1,10 +1,16 @@
 // src/App.js
 import React from "react";
-import TodoApp from "./components/todoApp";
+import { Outlet } from "react-router";
+import Header from "./layout/header";
+import Footer from "./layout/footer";
 function App() {
    return (
       <div>
-         <TodoApp />
+         <>
+            <Header />
+            <Outlet />
+            <Footer />
+         </>
       </div>
    );
 }
