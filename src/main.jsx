@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./assets/reset.scss";
-import App from "./App.jsx";
+import "@assets/reset.scss";
+import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import Users from "./pages/users/index.jsx";
-import Register from "./pages/register/index.jsx";
-import Books from "./pages/books.jsx";
-import Error from "./pages/error.jsx";
-import TodoApp from "./components/todoApp";
+import Register from "@pages/register/index.jsx";
+import Books from "@pages/books.jsx";
+import Error from "@pages/error.jsx";
+import TodoApp from "@components/todoApp/index.jsx";
+import Users from "@pages/users/users.jsx";
 const router = createBrowserRouter([
    {
       element: <App />,

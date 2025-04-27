@@ -1,8 +1,8 @@
-import EmptyTask from "../NoDataImage";
-import styles from "./renderTask.module.scss";
-import checkList from "../../assets/images/businessman-checklist.jpg";
+import styles from "@components/renderTask/renderTask.module.scss";
+import checkList from "@assets/images/businessman-checklist.jpg";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import React from "react";
+import EmptyTask from "@components/NoDataImage";
 const RenderTask = React.memo(({ tasks, handleDeleteTask, handleEditTask }) => {
    return (
       <>

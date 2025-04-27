@@ -1,7 +1,7 @@
-import AddTask from "../addTask";
-import RenderTask from "../rendertask";
-import styles from "./todoApp.module.scss";
-import HandleTask from "./handleTask";
+import AddTask from "@components/addTask";
+import RenderTask from "@components/rendertask";
+import styles from "@components/todoApp/todoApp.module.scss";
+import HandleTask from "@components/todoApp/handleTask";
 import { useEffect } from "react";
 const TodoApp = () => {
    const {

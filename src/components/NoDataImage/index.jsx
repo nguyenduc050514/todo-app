@@ -1,4 +1,4 @@
-import styles from "./emptyTask.module.scss";
+import styles from "@components/NoDataImage/emptyTask.module.scss";
 const EmptyTask = ({ checkList }) => {
    return (
       <div className={styles["media"]}>

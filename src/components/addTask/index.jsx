@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./addtask.module.scss";
+import styles from "@components/addTask/addtask.module.scss";
 const AddTask = React.memo(({ handleCreateTask }) => {
    const [content, setContent] = useState("");
    return (

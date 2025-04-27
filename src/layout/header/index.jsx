@@ -1,6 +1,6 @@
-import reactLogo from "../../assets/react.svg";
+import reactLogo from "@assets/react.svg";
 import { Link } from "react-router";
-import styles from "./header.module.scss";
+import styles from "@layout/header/header.module.scss";
 const Header = () => {
    const navItemsLink = [
       {
@@ -20,7 +20,6 @@ const Header = () => {
          href: "/register",
       },
    ];
-
    return (
       <header className={styles["header"]}>
          <div className={styles["header__inner"]}>
